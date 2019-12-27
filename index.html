@@ -1,51 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet" type="text/css">
-  <title>Pietra Hr Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>PTRRDGS|Pietra Rodrigues </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <section class="welcome-section" id="about">
-    <h1>Welcome</h1>
-    <p>to my personal portfolio</p>
-  </section>
-  <section class="projects" id="projects">
-    <h2 class="projects-section-header">Portfolio</h2>
-    <p>These items are mainly exercises done whilst undertaking a full stack development course with Free Code Camp. The
-      details are on the back of the cards with links to my CodePen and live sites</p>
-    <div class="projects-section">
-      <iframe src="https://codepen.io/honmapietra/full/zYOENNG" frameborder="0"
-        onload="this.style.opacity = 1"></iframe>
-    </div>
-    <div class="projects-section">
-      <iframe src="https://codepen.io/honmapietra/full/vYBZXVN" frameborder="0"
-        onload="this.style.opacity = 1"></iframe>
-    </div>
-    <div class="projects-section">
-      <iframe src="https://codepen.io/honmapietra/full/oNvwVje" frameborder="0"
-        onload="this.style.opacity = 1"></iframe>
-    </div>
-  </section>
-  <div class="contact-section" id="contact">
-    <div class="contact-links">
-      <a href="https://facebook.com/PietraRth" target="_blank" class="btn contact-details">Facebook</a>
-      <a id="profile-link" href="https://github.com/honmapietra" target="_blank" class="btn contact-details">
-        GitHub</a>
-      <a href="https://twitter.com/raducanutt" target="_blank" class="btn contact-details"> Twitter</a>
-    </div>
-  </div>
+	<script src="script.js"></script>
+	<section class="home">
+		<div class="overlay">
+			<nav role="navigation">
+				<ul class="vertical-list">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About me</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact Me</a></li>
+				</ul>
+			</nav>
+
+			<div class="container">
+				<h1><span class="logo">— Hi,i'm a enthusiastic <br> front-end development student <br> livin in Brazil
+				</h1>
+				<ul class="social-links vertical-list">
+					<li><a href="https://twitter.com/aoiimrie" class="noir twitter" target="_blank">Twitter</a></li>
+					<li><a href="https://github.com/honmapietra" class="noir github" target="_blank">Github</a></li>
+					<li><a href="https://www.linkedin.com/in/pietratomords/" class="noir linkedin"
+							target="_blank">Linkedin</a></li>
+					<li><a href="https://www.freecodecamp.com/pietra" class="noir freecodecamp"
+							target="_blank">freeCodeCamp</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="about">
+		<div class="container">
+			<h2>a little about me:</h2>
+			<div class="row info">
+				<div class="col-sm-8">
+					<p>
+						Comecei meus estudos na área da saúde porém depois de um tempo me conhecendo melhor vi que não
+						era oque realmente eu queria, pesquisando bastante e depois de algum tempo criei gosto pela área
+						da tecnologia mais especificamente por desenvolvimento web, atualmente estou estudando e busco
+						aprender muito mais e crescer nessa área que realmente me encontrei.
+				</div>
+			</div>
+
+			<div id="skill-set">
+				<h3>Skills</h3>
+				<ul class="vertical-list">
+					<li>
+						<ul class="vertical-list skills" id="web-development-skills">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="overlay">
+			<div class="container">
+				<h2>Feel free to email me:</h2>
+
+				<div class="row">
+					<div class="col-lg-9">
+						<form role="form" method="POST">
+							<div class="form-group">
+								<label for="nameTXT">Your Name</label>
+								<input type="text" id="nameTXT" name="nameTXT">
+							</div>
+
+							<div class="form-group">
+								<label for="emailTXT">Email Address</label>
+								<input type="email" id="emailTXT" name="emailTXT">
+							</div>
+
+							<div class="form-group">
+								<label for="subjectTXT">Subject</label>
+								<input type="text" id="subjectTXT" name="subjectTXT">
+							</div>
+
+							<div class="form-group">
+								<label for="messageTXT">Message</label>
+								<textarea cols="36" rows="8" id="messageTXT" name="messageTXT"></textarea>
+							</div>
+
+							<button type="submit" class="noir" id="submitBTN" name="submitBTN"><span
+									class="glyphicon glyphicon-send"></span>Send</button>
+						</form>
+					</div>
+
+					<div class="col-lg-3 overflow">
+						<ul class="social-links vertical-list">
+							<li><a href="https://twitter.com/aoiimrie" class="noir twitter" target="_blank">Twitter</a>
+							</li>
+							<li><a href="https://www.linkedin.com/pietratomords/" class="noir linkedin"
+									target="_blank">Linkedin</a></li>
+							<li><a href="https://github.com/honmapietra" class="noir github" target="_blank">Github</a>
+							</li>
+							<li><a href="https://www.freecodecamp.com/pietra" class="noir freecodecamp"
+									target="_blank">freeCodeCamp</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>© 2019 PIETRA'S PORTFOLIO - ALL RIGHTS RESERVED</footer>
 </body>
-
-
 </html>
