@@ -107,7 +107,7 @@ h1 .logo {
 }
 
 .home {
-	background: url("https://static.pexels.com/photos/232/apple-iphone-books-desk-large.jpg") no-repeat;
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQL0Z8WLBl31htvLkz_wM7Hs8opNnWP-t6sOm_eCLNzrna3KeH5") no-repeat;
 	width: 100%;
 	background-size: cover;
 }
@@ -395,6 +395,25 @@ h1 .logo {
 	}
 }
 
+.content-section .thumbnail { 
+	position: relative; 
+	overflow: hidden; 
+	cursor: pointer;
+} 
+
+.content-section .thumbnail * {
+ transition: all .25s;
+ }
+.content-section .thumbnail h4 {
+	 font-size: 19px; font-weight: 400;
+}
+
+.content-section .thumbnail p { 
+	line-height: 24px; 
+}
+
+
 footer {
-	background-color:  #F4A460;
+background:	#F4A460;
+text-align: center;
 }
